@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleCliente.css">
+    <title>Cadastro Empreiteira</title>
+</head>
+
+
+<div id="divTopo">
+    <a id="Empreiteira" href="index.html"> Empreiteira </a>
+
+    <a id="cliente" href="index.html"> Cliente </a>
+    <a id="funcionario" href="cadastro.html"> Funcionario </a>
+    <a id="obra" href="contato.html"> Obra </a>
+    <a id="os" href="contato.html"> OS </a>
+
+    <a id="entrar" href="index.html"> Entrar </a>
+    <a id="funcionalidades" href="cadastro.html"> Funcionalidades </a>
+    <a id="contato" href="contato.html"> Contato </a>
+</div>
+
+<body>
+    <div>
+        <div name="formulario-inicial" id="form" class="formularios">
+            <br>
+            <div id="alterar-cliente" class="ocultar">
+
+                <h1 id="subTitulo">Alterar Cliente</h1>
+                <br>
+
+                <div id="contCampos">
+
+                <label for="cliente-id-alterar">ID</label>
+                <input type="text" id="cliente-id-alterar" readonly>
+                <label for="cliente-nome-alterar">Nome:</label>
+                <input type="text" id="cliente-nome-alterar" />
+                <label for="cliente-cnpj-alterar">CNPJ:</label>
+                <input type="text" id="cliente-cnpj-alterar" />
+                <label for="cliente-telefone-alterar">Telefone:</label>
+                <input type="text" id="cliente-telefone-alterar" />
+                </div>
+
+                <div id="botaoClienteAlterar">
+                    <input type="button" value="Alterar Cliente" onclick="handlerAlterarCliente()" />
+                    <input type="button" value="Cancelar" onclick="toogleAlterarCliente()" />
+                    <input type="button" value="Deletar" onclick="handlerDeleteCliente()" />
+                </div>
+            </div>
+        </div>
+        </div>
+        <br>
+        <table border="5px" id="tabela-clientes" class="mostrar">
+            <thead>
+                <tr>
+                    <th>
+                        ID
+                    </th>
+                    <th>
+                        Nome
+                    </th>
+                    <th>
+                        CNPJ
+                    </th>
+                    <th>
+                        Telefone
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="tabela-clientes-body">
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="jquery.js"></script>
+    <script src="./bootstrap.js"></script>
+    <script src="utils.js"></script>
+    <script src="request.js"></script>
+    <script src="cliente.js"></script>
+    <script src="funcionario.js"></script>
+    <script src="obra.js"></script>
+    <script src="OS.js"></script>
+</body>
+
+</html>

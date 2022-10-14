@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleCliente.css">
+    <title>Cadastro Empreiteira</title>
+</head>
+
+
+<div id="divTopo">
+    <a id="Empreiteira" href="\index.html"> Empreiteira </a>
+
+    <a id="cliente" href="/Cliente/ClienteInicio.html"> Cliente </a>
+    <a id="funcionario" href="/Funcionário/FuncionarioInicio.html"> Funcionario </a>
+    <a id="obra" href="/Obra/ObraInicio.html"> Obra </a>
+    <a id="os" href="/OS/OsInicio.html"> OS </a>
+
+    <a id="entrar" href="index.html"> Entrar </a>
+    <a id="funcionalidades" href="cadastro.html"> Funcionalidades </a>
+    <a id="contato" href="contato.html"> Contato </a>
+</div>
+
+<body>
+    <div>
+        <div name="formulario-inicial" id="form" class="formularios">
+            <br>
+            <h1 id="subTitulo">Cadastrar Cliente</h1>
+            <br>
+
+
+                <div id="contCampos">
+                    <label for="cliente-nome">Nome:</label>
+                    <input type="text" id="cliente-nome" />
+                    <label for="cliente-cnpj">CNPJ:</label>
+                    <input type="text" id="cliente-cnpj" />
+                    <label for="cliente-telefone">Telefone:</label>
+                    <input type="text" id="cliente-telefone" />
+                </div>
+
+                <div id="botaoCliente">
+                    <input type="button" value="Adicionar Cliente" onclick="handlerSalvarCliente()" />
+                </div>
+        </div>
+        <br>
+        <table border="5px" id="tabela-clientes" class="mostrar">
+            <thead>
+                <tr>
+                    <th>
+                        ID
+                    </th>
+                    <th>
+                        Nome
+                    </th>
+                    <th>
+                        CNPJ
+                    </th>
+                    <th>
+                        Telefone
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="tabela-clientes-body">
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="jquery.js"></script>
+    <script src="./bootstrap.js"></script>
+    <script src="utils.js"></script>
+    <script src="request.js"></script>
+    <script src="cliente.js"></script>
+    <script src="funcionario.js"></script>
+    <script src="obra.js"></script>
+    <script src="OS.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleLogin.css">
+    <title>Projeto Empreiteira</title>
+
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            width: 100%;
+            height: 100%;
+        }
+
+        form{
+            width: 300px;
+            margin: 200px auto;
+            text-align: center;
+        }
+
+        input{
+            display: block;
+            margin: 10px auto;
+            width: 250px;
+            height: 30px;
+        }
+
+        #container{
+
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+
+    </style>
+
+</head>
+
+<div id="divTopo">
+    <a id="Empreiteira" href="index.html"> Empreiteira </a>
+
+    <a id="cliente" href="/Cliente/ClienteInicio.html"> Cliente </a>
+    <a id="funcionario" href="/Funcionário/FuncionarioInicio.html"> Funcionario </a>
+    <a id="obra" href="/Obra/ObraInicio.html"> Obra </a>
+    <a id="os" href="/OS/OsInicio.html"> OS </a>
+
+    <a id="entrar" href="index.html"> Entrar </a>
+    <a id="funcionalidades" href="cadastro.html"> Funcionalidades </a>
+    <a id="contato" href="contato.html"> Contato </a>
+</div>
+
+<body>
+    
+    <div id="container">
+        <form>
+            
+            <h3 style="font-size: 50px; text-decoration: none; color: black; font-size: 35px; font-weight: 600;">Login</h3>
+            <br>
+            <input style="width: 300px;height: 40px;font-size: 20px;" type="text" placeholder="Login" id="login">
+            <input style="width: 300px;height: 40px;font-size: 20px;" type="password" placeholder="Senha" id="senha">
+            <input style="width: 300px;height: 40px;font-size: 20px;" type="submit" onclick="logar(); return false">
+            <a style="font-size: 25px;" href="cadastro.html">Cadastrar</a>
+            
+            <div style="width: 400px; height: 500px; border-color: black; border-style: solid; border-radius: 30px; position: fixed; top: 15%; left: -50px; display: flex; pointer-events: none;">
+                </div>
+    </form>
+</div>
+
+
+    <script>
+
+
+        function logar(){
+
+            var login = document.getElementById('login').value;
+            var senha = document.getElementById('senha').value;
+
+            if(login == "admin" && senha == "admin"){
+                alert('Sucesso');
+                location.href = "/Cliente/ClienteInicio.html";
+            }else{
+                alert('Usuario ou senha incorretos');
+            }
+
+        }
+
+    </script>
+
+
+</body>
+</html>

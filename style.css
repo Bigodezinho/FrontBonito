@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient( rgba(0,0,0,0.281), rgba(0,0,0,0.308)),url('background.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#divTopo {
+    background-color: rgb(12, 12, 12);
+    height: 80px;
+
+}
+
+#divTopo #Empreiteira {
+    font-size: 50px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+    margin-right: 1px;
+    margin-left: 1px; /*espaço invisivel á esquerda dele*/
+
+    position: absolute;
+    left: 1%;
+    top: 1.5%;
+}
+
+
+#cliente {
+
+    position: absolute;
+    top: 32px;
+    left: 280px;
+    text-decoration: none;
+    color: #fff;
+}
+
+#funcionario {
+
+    position: absolute;
+    top: 32px;
+    left: 360px;
+    text-decoration: none;
+    color: #fff;
+}
+
+#obra {
+
+    position: absolute;
+    top: 32px;
+    left: 480px;
+    text-decoration: none;
+    color: #fff;
+}
+
+#os {
+
+    position: absolute;
+    top: 32px;
+    left: 550px;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+
+#entrar {
+
+    position: absolute;
+    top: 32px;
+    right: 295px;
+    text-decoration: none;
+    color: #fff;
+}
+
+#funcionalidades {
+
+    position: absolute;
+    top: 32px;
+    right: 130px;
+    text-decoration: none;
+    color: #fff;
+}
+
+#contato {
+
+    position: absolute;
+    top: 32px;
+    right: 30px;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+#campos {
+
+    position: absolute;
+    left: 36%;
+
+
+}
+
+#tabela-clientes:hover {
+
+    color: aqua;
+
+}
+
+#subTitulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+#c1 {
+    position: absolute;
+    left: 18%;
+    top: 110px;
+}
+#c2 {
+    position: absolute;
+    left: 23%;
+    top: 110px;
+}
+#c3 {
+    position: absolute;
+    left: 42%;
+    top: 110px;
+}
+#c4 {
+    position: absolute;
+    left: 47%;
+    top: 110px;
+}
+#c5 {
+    position: absolute;
+    left: 64%;
+    top: 110px;
+}
+#c6 {
+    position: absolute;
+    left: 70%;
+    top: 110px;
+}
+
+
+
+
+
+
+.campos #botaoCliente {
+    
+    margin-top: 0.4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.campos #contCampos {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#tabela-clientes {
+    margin-top: 0.4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#centro {
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    transform: translateX(-50%) translateY(-50%);
+
+
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: 600;
+
+}
+
+#centro .botoes{
+    margin-top: 30px;
+}
+#centro .botoes button{
+    height: 55px;
+    width: 170px;
+    border-radius: 5px;
+    border: 0;
+    margin: 0 10px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+}
+#centro .botoes button.n-overlay{
+    color: white;
+    background: none;
+    border: 2px solid white;
+}
+#centro .botoes button.n-overlay:hover{
+    color: black;
+    background-color: white;
+}
+#centro .botoes button.overlay{
+    background: white;
+    color: black;
+    animation: vibrar 0.5s ease-in-out infinite both;
+}

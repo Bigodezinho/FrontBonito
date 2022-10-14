@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#divTopo {
+    background-color: rgb(12, 12, 12);
+    height: 80px;
+
+}
+
+#divTopo #Empreiteira {
+    font-size: 50px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+    margin-right: 1px;
+    margin-left: 1px; /*espaço invisivel á esquerda dele*/
+
+    position: absolute;
+    left: 1%;
+    top: 1.5%;
+}
+
+
+#cliente {
+
+    position: absolute;
+    top: 32px;
+    left: 280px;
+    text-decoration: none;
+    color: #fff;
+}
+
+#funcionario {
+
+    position: absolute;
+    top: 32px;
+    left: 360px;
+    text-decoration: none;
+    color: #fff;
+}
+
+#obra {
+
+    position: absolute;
+    top: 32px;
+    left: 480px;
+    text-decoration: none;
+    color: #fff;
+}
+
+#os {
+
+    position: absolute;
+    top: 32px;
+    left: 550px;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+
+#entrar {
+
+    position: absolute;
+    top: 32px;
+    right: 295px;
+    text-decoration: none;
+    color: #fff;
+}
+
+#funcionalidades {
+
+    position: absolute;
+    top: 32px;
+    right: 130px;
+    text-decoration: none;
+    color: #fff;
+}
+
+#contato {
+
+    position: absolute;
+    top: 32px;
+    right: 30px;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+#campos {
+
+    position: absolute;
+    left: 36%;
+
+
+}
+
+#tabela-funcionarios:hover {
+
+    color: rgb(255, 251, 0);
+
+}
+
+#subTitulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+#c1 {
+    position: absolute;
+    left: 18%;
+    top: 110px;
+}
+#c2 {
+    position: absolute;
+    left: 23%;
+    top: 110px;
+}
+#c3 {
+    position: absolute;
+    left: 42%;
+    top: 110px;
+}
+#c4 {
+    position: absolute;
+    left: 47%;
+    top: 110px;
+}
+#c5 {
+    position: absolute;
+    left: 64%;
+    top: 110px;
+}
+#c6 {
+    position: absolute;
+    left: 70%;
+    top: 110px;
+}
+
+
+
+
+
+
+#botaoCliente {
+    
+    margin-top: 0.4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contCampos {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#tabela-funcionarios {
+    margin-top: 0.4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
